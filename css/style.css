@@ -77,7 +77,8 @@
 }
 .pic {
   float: left;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .polyChamps{
   float: left;
@@ -99,16 +100,17 @@
   height: 35px;
   border: black 2px;
   color: white;
+  flex-wrap: wrap;
+  display: flex;
 }
 nav ul {
   padding: 0;
   margin: 0;
-  margin-right: 155px;
-
+  text-align: center;
+  align-self: stretch;
 }
 
 nav li {
-  float:right;
   display:inline;
   padding-left: 23px;
   padding-right: 23px;
@@ -122,16 +124,18 @@ nav li {
 }
 
 .boxes {
-  max-width: 90%;
-  margin-left: 12%;
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Teko', sans-serif;
   margin-top: 30px;
-  margin-right: 10%;
+  flex-wrap: wrap;
+  display: flex;
+  padding-left: 12%;
+  padding-right: 12%;
+  float: inherit;
 }
 
 .boxA {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -140,7 +144,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxB {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -150,7 +154,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxC {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -159,7 +163,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxD {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -169,7 +173,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxE {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -178,17 +182,19 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxF {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("C:/Users/gupit/Desktop/polyChamps/img/mallard.png");
+  background-repeat: no-repeat;
   background-color: #1f884b;
-  border-radius: 25px;
+  border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxG {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -197,7 +203,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxH {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -206,7 +212,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxI {
-  float: left;
+  float: inherit;
   color: white;
   max-width: 260px;
   height: 420px;
@@ -216,7 +222,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxJ {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -225,7 +231,7 @@ nav li {
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxK {
-  float: left;
+  float: inherit;
   max-width: 260px;
   height: 420px;
   margin: 50px;
@@ -251,8 +257,7 @@ nav li {
 .písání {
   margin-left: 20px;
   font-size: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 130px;
 }
 
 body {
@@ -260,7 +265,6 @@ body {
 }
 
 .cojeto {
-  height: 320px;
   padding: 30px;
   border-bottom: 35px black;
   background-color: white;
@@ -288,4 +292,61 @@ body {
   text-align: center;
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Teko', sans-serif;
+}
+
+/*desingn pod 1500*/
+@media only screen and (max-width: 1900px) {
+  .polyChamps {
+    font-size: 130px;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .polyChamps {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 1516px) {
+  .polyChamps {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 1370px) {
+  .polyChamps {
+    font-size: 60px;
+    float: right;
+    margin-right: 10%;
+  }
+  .nav {
+    height: 85px;
+  }
+
+}
+@media only screen and (max-width: 1060px) {
+  .polyChamps {
+    display: none;
+  }
+  .pic {
+    float: left;
+    left: calc(50% - 320px/2);
+    position: absolute;
+  }
+  .nav {
+    height: 85px;
+    display:inline-flex;
+  }
+  .boxes {
+    align-self: center;
+    margin-left: 10%;
+    float: inherit;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Teko', sans-serif;
+    margin-top: 30px;
+  }
+  .malý {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
