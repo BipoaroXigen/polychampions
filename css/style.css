@@ -136,57 +136,68 @@ nav li {
 
 .boxA {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/bombers.png");
   background-color: #3c93f4;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxB {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/cosmonauts.png");
   background-color: #a1005e;
-  border-radius: 25px;
+  border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxC {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/crawfish.png");
   background-color: #fa8072;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxD {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/jets.png");
   background-color: #8444d4;
-  border-radius: 25px;
+  border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxE {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/lightning.png");
   background-color: #ffff00;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxF {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
-  background-image: url("../img/mallard.png");
+  background-image: url("../img/teamcards/mallard.png");
   background-repeat: no-repeat;
   background-color: #1f884b;
   border-radius: 10px;
@@ -195,20 +206,24 @@ nav li {
 }
 .boxG {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/plague.png");
   background-color: #7dff63;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxH {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/ronin.png");
   background-color: #ff7a00;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxI {
@@ -217,26 +232,31 @@ nav li {
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/sparkies.png");
   background-color: #844c1f;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxJ {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/wildfire.png");
   background-color: #d82725;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxK {
   float: inherit;
+  color: white;
   max-width: 260px;
   height: 420px;
   margin: 50px;
+  background-image: url("../img/teamcards/novas.png");
   background-color: #beac6a;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 
