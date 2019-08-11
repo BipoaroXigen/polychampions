@@ -97,8 +97,6 @@
 
 .nav {
   background-color: #313842;
-  height: 35px;
-  border: black 2px;
   color: white;
   flex-wrap: wrap;
   display: flex;
@@ -106,19 +104,24 @@
 nav ul {
   padding: 0;
   margin: 0;
-  text-align: center;
-  align-self: stretch;
 }
 
 nav li {
-  display:inline;
+  display:inline-grid;
+  align-items: stretch;
   padding-left: 23px;
   padding-right: 23px;
-  padding-bottom: 10px;
-  padding-top: 0;
-  margin-top: 0;
   font-size: 30px;
   text-decoration: none;
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Teko', sans-serif;
+}
+
+.teams {
+  background-color: #313842;
+  color: white;
+  height: 35px;
+  text-align: center;
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Teko', sans-serif;
 }
@@ -129,30 +132,28 @@ nav li {
   margin-top: 30px;
   flex-wrap: wrap;
   display: flex;
-  padding-left: 12%;
-  padding-right: 12%;
-  float: inherit;
+  float: left;
+  left: calc(50% - 1800px/2);
+  position: absolute;
 }
 
 .boxA {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/bombers.png");
-  background-color: #3c93f4;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxB {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/cosmonauts.png");
-  background-color: #a1005e;
   border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
@@ -160,22 +161,20 @@ nav li {
 .boxC {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/crawfish.png");
-  background-color: #fa8072;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxD {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/jets.png");
-  background-color: #8444d4;
   border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
@@ -183,23 +182,20 @@ nav li {
 .boxE {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/lightning.png");
-  background-color: #ffff00;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxF {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/mallard.png");
-  background-repeat: no-repeat;
-  background-color: #1f884b;
   border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
@@ -207,55 +203,50 @@ nav li {
 .boxG {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/plague.png");
-  background-color: #7dff63;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxH {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/ronin.png");
-  background-color: #ff7a00;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxI {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/sparkies.png");
-  background-color: #844c1f;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxJ {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/wildfire.png");
-  background-color: #d82725;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxK {
   float: inherit;
   color: white;
-  max-width: 260px;
+  width: 260px;
   height: 420px;
   margin: 50px;
   background-image: url("../img/teamcards/novas.png");
-  background-color: #beac6a;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
@@ -276,12 +267,13 @@ nav li {
 
 .písání {
   margin-left: 20px;
-  font-size: 15px;
+  margin-right: 10px;
+  font-size: 20px;
   margin-top: 130px;
 }
 
 body {
-  background-color:#d5daf5;
+  background-image: url("../img/background.png");
 }
 
 .cojeto {
@@ -304,25 +296,36 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
-
-.teams {
-  background-color: #313842;
+footer {
   color: white;
-  height: 35px;
-  text-align: center;
-  font-family: 'Alfa Slab One', cursive;
-  font-family: 'Teko', sans-serif;
-}
+  background-color: #313842;
+  padding: 35px;
+  margin-top: 100%;
 
+}
 /*desingn pod 1500*/
 @media only screen and (max-width: 1900px) {
   .polyChamps {
     font-size: 130px;
   }
+  .boxes {
+    left: calc(50% - 1800px/2);
+    position: absolute;
+  }
 }
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1890px) {
+  .boxes {
+    left: calc(50% - 1800px/2);
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 1798px) {
   .polyChamps {
     font-size: 100px;
+  }
+  .boxes {
+    left: calc(50% - 1440px/2);
+    position: absolute;
   }
 }
 @media only screen and (max-width: 1516px) {
@@ -330,6 +333,68 @@ body {
     font-size: 100px;
   }
 }
+@media only screen and (max-width: 1440px) {
+  .boxes {
+    left: calc(50% - 1250px/2);
+    position: absolute;
+  }
+  .boxA {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxB {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxC {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxD {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxE {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxF {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxG {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxH {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxI {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxJ {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .boxK {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
 @media only screen and (max-width: 1370px) {
   .polyChamps {
     font-size: 60px;
@@ -339,7 +404,11 @@ body {
   .nav {
     height: 85px;
   }
-
+}
+@media only screen and (max-width: 1370px) {
+  .boxes{
+    left: calc(50% - 915px/2);
+  }
 }
 @media only screen and (max-width: 1060px) {
   .polyChamps {
@@ -354,19 +423,108 @@ body {
     height: 85px;
     display:inline-flex;
   }
-  .boxes {
-    align-self: center;
-    margin-left: 10%;
-    float: inherit;
-    font-family: 'Alfa Slab One', cursive;
-    font-family: 'Teko', sans-serif;
-    margin-top: 30px;
-  }
   .malý {
     margin-top: 25px;
     text-align: center;
     font-size: 15px;
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 945px) {
+  .boxes {
+    margin-top: 0;
+    flex-wrap:nowrap;
+    overflow-x: scroll;
+    position:relative;
+    left: 0;
+  }
+  .boxA {
+    margin: 0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxB {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxC {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxD {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxE {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxF {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxG {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxH {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxI {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxJ {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
+  }
+  .boxK {
+    margin:0;
+    margin-top: 0;
+    float: none;
+    box-shadow: none;
+    border-radius: none;
+    display: inline-block;
   }
 }
