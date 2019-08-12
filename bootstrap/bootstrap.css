@@ -1,0 +1,79 @@
+html {
+    overflow-x: hidden;
+}
+
+.bg-header {
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titlename {
+    font-family: 'Baloo Da', cursive;
+    font-family: 'Baloo Chettan', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    text-shadow: -5px 0 black, 0 2.5px black, 5px 0 black, 0 -5px black;
+}
+
+.teams {
+    color: black;
+}
+
+.bombers, .cosmo, .crawfish, .jets, .lightning, .mallards, .plague, .ronin, .sparkies, .wildfire, .novas {
+    color: white !important;
+    -ms-flex: 0 0 260px;
+    flex: 0 0 260px;
+    height: 420px;
+    width: 260px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #313842; 
+}
+
+.bombers {
+    background-image: url("../img/teamcards/bombers.png");
+       
+}
+
+.cosmo {
+    background-image: url("../img/teamcards/cosmonauts.png");
+}
+
+.crawfish {
+    background-image: url("../img/teamcards/crawfish.png");
+}
+
+.jets {
+    background-image: url("../img/teamcards/jets.png");
+}
+
+.lightning {
+    background-image: url("../img/teamcards/lightning.png");
+}
+
+.mallards {
+    background-image: url("../img/teamcards/mallard.png");
+}
+
+.plague {
+    background-image: url("../img/teamcards/plague.png");
+}
+
+.ronin {
+    background-image: url("../img/teamcards/ronin.png");
+}
+
+.sparkies {
+    background-image: url("../img/teamcards/sparkies.png");
+}
+
+.wildfire {
+    background-image: url("../img/teamcards/wildfire.png");
+}
+
+.novas {
+    background-image: url("../img/teamcards/novas.png");
+}
