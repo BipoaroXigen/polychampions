@@ -65,7 +65,13 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover{
+  text-decoration: underline;
+}
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;

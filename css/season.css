@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+@-webkit-keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.header {
+  background-image: url("../img/header.png");
+  min-height: 340px;
+}
+.pic {
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.polyChamps{
+  float: left;
+  font-family: 'Baloo Da', cursive;
+  font-family: 'Baloo Chettan', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+  text-align: center;
+  font-size: 150px;
+  text-shadow: -5px 0 black, 0 2.5px black, 5px 0 black, 0 -5px black;
+  margin-top: 50px;
+  margin-left: 80px;
+  max-width: 90%;
+}
+
+
+.nav {
+  background-color: #313842;
+  color: white;
+  flex-wrap: wrap;
+  display: flex;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display:inline-grid;
+  padding-left: 23px;
+  padding-right: 23px;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Teko', sans-serif;
+}
+body {
+  background-image: url("../img/background.png");
+  margin: 0;
+  padding:0;
+}
+@media only screen and (max-width: 1900px) {
+  .polyChamps {
+    font-size: 130px;
+  }
+}
+@media only screen and (max-width: 1798px) {
+  .polyChamps {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 1516px) {
+  .polyChamps {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 1370px) {
+  .polyChamps {
+    font-size: 60px;
+    float: right;
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .polyChamps {
+    display: none;
+  }
+  .pic {
+    float: left;
+    left: calc(50% - 320px/2);
+    position: absolute;
+ }
+@media only screen and (max-width: 450px) {
+  nav li {
+    display:table;
+  }
+}
