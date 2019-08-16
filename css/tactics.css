@@ -126,6 +126,30 @@ body {
   margin: 0;
   padding:0;
 }
+.text {
+  width: 75%;
+  padding-top: 35px;
+  float: right;
+}
+.text h1 {
+  text-align: center;
+  padding-bottom: 35px;
+}
+.sekce {
+  margin: 35px;
+}
+.show {
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.article {
+  margin: 35px;
+  width: 50%;
+}
+.B {
+  height:350px;
+}
 @media only screen and (max-width: 1900px) {
   .polyChamps {
     font-size: 130px;
