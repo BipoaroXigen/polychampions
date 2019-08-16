@@ -425,7 +425,7 @@ body {
     margin-right: 10%;
   }
 }
-@media only screen and (max-width: 945px) {
+@media only screen and (max-width: 1000px) {
   .boxes {
     margin-top: 0;
     flex-wrap:nowrap;
