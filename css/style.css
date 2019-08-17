@@ -126,127 +126,115 @@ a:hover {
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Teko', sans-serif;
 }
-
+footer {
+  background-color: #313842;
+  height:50px;
+}
+footer p {
+  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  padding-top: 0.25em;
+}
 .boxes {
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Teko', sans-serif;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  display: flex;
-  left: calc(50% - 1800px/2);
-  position: absolute;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5em;
+  justify-items: center;
+  margin: 5em;
 }
 
 .boxA {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/bombers.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxB {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/cosmonauts.png");
   border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxC {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/crawfish.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxD {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/jets.png");
   border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxE {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/lightning.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxF {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/mallard.png");
   border-radius: 10px;
   color: white;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxG {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/plague.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxH {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/ronin.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxI {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/sparkies.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxJ {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/wildfire.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
 .boxK {
-  float: inherit;
   color: white;
   width: 260px;
   height: 420px;
-  margin: 50px;
   background-image: url("../img/teamcards/novas.png");
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
@@ -305,24 +293,13 @@ body {
   .polyChamps {
     font-size: 130px;
   }
-  .boxes {
-    left: calc(50% - 1800px/2);
-    position: absolute;
-  }
-}
-@media only screen and (max-width: 1890px) {
-  .boxes {
-    left: calc(50% - 1800px/2);
-    position: absolute;
-  }
 }
 @media only screen and (max-width: 1798px) {
   .polyChamps {
     font-size: 100px;
   }
   .boxes {
-    left: calc(50% - 1440px/2);
-    position: absolute;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
   }
 }
 @media only screen and (max-width: 1516px) {
@@ -332,66 +309,9 @@ body {
 }
 @media only screen and (max-width: 1440px) {
   .boxes {
-    left: calc(50% - 1250px/2);
-    position: absolute;
-  }
-  .boxA {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxB {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxC {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxD {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxE {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxF {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxG {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxH {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxI {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxJ {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .boxK {
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 }
-
 @media only screen and (max-width: 1370px) {
   .polyChamps {
     font-size: 60px;
@@ -399,9 +319,10 @@ body {
     margin-right: 10%;
   }
 }
-@media only screen and (max-width: 1370px) {
-  .boxes{
-    left: calc(50% - 915px/2);
+@media only screen and (max-width: 1100px) {
+  .boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
   }
 }
 @media only screen and (max-width: 1060px) {
@@ -423,107 +344,76 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .boxes {
-    margin-top: 0;
     flex-wrap:nowrap;
     overflow-x: scroll;
     left: 0;
     max-width: 100%;
     overflow-y: hidden;
+    display:flex;
+    margin: 0;
+
   }
   .boxA {
-    margin: 0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxB {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxC {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxD {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxE {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxF {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxG {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxH {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxI {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxJ {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
     min-width: 260px;
   }
   .boxK {
-    margin:0;
-    margin-top: 0;
-    float: none;
     box-shadow: none;
     border-radius: none;
     display: inline-block;
