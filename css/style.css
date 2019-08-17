@@ -106,7 +106,7 @@ a:hover {
 }
 .ref {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:repeat(6, 1fr);
   background-color: #313842;
   color: white;
   text-decoration: none;
@@ -121,14 +121,18 @@ a:hover {
 .teams {
   background-color: #313842;
   color: white;
-  height: 35px;
+  height: 40px;
   text-align: center;
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Teko', sans-serif;
+  font-size: 20px;
+  padding-top: 0;
+  font-style: oblique;
+  font-weight: lighter;
 }
 footer {
   background-color: #313842;
-  height:50px;
+  height:40px;
 }
 footer p {
   font-family: 'Alfa Slab One', cursive;
@@ -136,13 +140,13 @@ footer p {
   text-align: center;
   font-size: 25px;
   color: white;
-  padding-top: 0.25em;
+  padding-top: 0.15em;
 }
 .boxes {
   font-family: 'Alfa Slab One', cursive;
   font-family: 'Teko', sans-serif;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:repeat(5, 1fr);
   grid-gap: 5em;
   justify-items: center;
   margin: 5em;
@@ -299,7 +303,7 @@ body {
     font-size: 100px;
   }
   .boxes {
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns:repeat(4, 1fr);
   }
 }
 @media only screen and (max-width: 1516px) {
@@ -309,7 +313,7 @@ body {
 }
 @media only screen and (max-width: 1440px) {
   .boxes {
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns:repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 1370px) {
@@ -321,7 +325,7 @@ body {
 }
 @media only screen and (max-width: 1100px) {
   .boxes {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(3, 1fr);
     grid-gap: 1em;
   }
 }
@@ -344,79 +348,63 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .boxes {
-    flex-wrap:nowrap;
-    overflow-x: scroll;
-    left: 0;
-    max-width: 100%;
     overflow-y: hidden;
     display:flex;
     margin: 0;
-
   }
   .boxA {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxB {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxC {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxD {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxE {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxF {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxG {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxH {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxI {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxJ {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
   .boxK {
     box-shadow: none;
     border-radius: none;
-    display: inline-block;
     min-width: 260px;
   }
 }
