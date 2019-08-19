@@ -239,7 +239,7 @@ footer p {
   color: white;
   width: 260px;
   height: 420px;
-  background-image: url("../img/teamcards/novas.png");
+  /*background-image: url("../img/teamcards/novas.png");*/
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px #313842;
 }
@@ -427,6 +427,6 @@ body {
 }
 @media only screen and (max-width: 366px) {
   .ref div:nth-child(1) {
-    padding-top: 0.75em;
+    padding-top: 0.20em;
   }
 }

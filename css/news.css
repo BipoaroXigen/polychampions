@@ -170,6 +170,6 @@ body {
 }
 @media only screen and (max-width: 366px) {
   .ref div:nth-child(1) {
-    padding-top: 0.75em;
+    padding-top: 0.20em;
   }
 }
