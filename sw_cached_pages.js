@@ -3,7 +3,17 @@ const cacheName = 'v1';
 
 const cacheAssets = [
     "polychamps.html",
-    "style.css"
+    "news.html",
+    "rules.html",
+    "season.html",
+    "tactics.html",
+    "../css/news.css",
+    "../css/rules.css",
+    "../css/season.css",
+    "../css/style.css",
+    "../css/tactics.css",
+    "../js/main.js",
+    "../js/sw_cached_pages.js"
 ]
 
 //call install event
@@ -25,7 +35,7 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
     console.log('Service Worker: Activated');
     //remove old caches
-    e.waitUntill(
+    e.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.map(cache => {
