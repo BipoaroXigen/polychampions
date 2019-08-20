@@ -1,5 +1,5 @@
 
-const cacheName = 'v1';
+const cacheName = 'v9';
 
 const cacheAssets = [
     "polychamps.html",
@@ -7,13 +7,30 @@ const cacheAssets = [
     "rules.html",
     "season.html",
     "tactics.html",
-    "../css/news.css",
-    "../css/rules.css",
-    "../css/season.css",
-    "../css/style.css",
-    "../css/tactics.css",
-    "../js/main.js",
-    "../js/sw_cached_pages.js"
+    "sw_cached_pages.js",
+    "css",
+    "css/style.css",
+    "css/news.css",
+    "css/rules.css",
+    "css/season.css",
+    "css/tactics.css",
+    "img",
+    "img/ambhipion.png",
+    "img/background.png",
+    "img/header.png",
+    "img/bombers.png",
+    "img/cosmonauts.png",
+    "img/crawfish.png",
+    "img/jets.png",
+    "img/lightning.png",
+    "img/mallard.png",
+    "img/plague.png",
+    "img/ronin.png",
+    "img/sparkies.png",
+    "img/wildfire.png",
+    "js",
+    "js/main.js",
+    "favicon.ico"
 ]
 
 //call install event
@@ -40,7 +57,7 @@ self.addEventListener('activate', (e) => {
             return Promise.all(
                 cacheNames.map(cache => {
                     if(cache !== cacheName) {
-                        console.log("Service Worker: Clesring Old Cache");
+                        console.log("Service Worker: Clearing Old Cache");
                         return caches.delete(cache);
                     }
                 })
