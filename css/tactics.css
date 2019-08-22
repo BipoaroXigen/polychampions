@@ -127,8 +127,13 @@ body {
 .B {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-column-gap: 35px;
-  padding: 35px;
+  grid-column-gap: 5px;
+  padding: 10px;
+  padding-right: 35px;
+  margin: 25px;
+  background-color:white;
+  border: #313842 5px solid;
+  grid-row-gap: 35px;
 }
 }
 @media only screen and (max-width: 1900px) {
@@ -170,6 +175,7 @@ body {
      grid-template-columns: 1fr;
      justify-items:center;
      text-align: center;
+
 
    }
    .B div:nth-child(odd){

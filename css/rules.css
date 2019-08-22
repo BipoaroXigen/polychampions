@@ -124,6 +124,35 @@ body {
   margin: 0;
   padding:0;
 }
+.content {
+  margin: 50px;
+  font-size: 23px;
+  line-height: 25px;
+  background-color: #fffeeb;
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+  border: #313842 1px solid;
+}
+.content li {
+  margin: 5px;
+}
+.content h1{
+  margin: 15px;
+  font-size: 40px;
+}
+.content h2{
+  margin: 10px;
+  font-size: 30px;
+}
+#ab {
+  padding-left: 30px;
+}
+#b {
+  padding-top: 1em;
+}
+
 @media only screen and (max-width: 1900px) {
   .polyChamps {
     font-size: 130px;
