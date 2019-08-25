@@ -126,15 +126,18 @@ body {
 }
 .B {
   display: grid;
-  grid-template-columns: 20% 80%;
-  grid-column-gap: 5px;
-  padding: 10px;
+  grid-template-columns: 300px 80% ;
+  grid-column-gap: 35px;
   padding-right: 35px;
   margin: 25px;
   background-color:white;
   border: #313842 5px solid;
   grid-row-gap: 35px;
+  grid-auto-rows:minmax(300px, auto);
 }
+.B div:nth-child(odd){
+  width: 300px;
+  height: 300px;
 }
 @media only screen and (max-width: 1900px) {
   .polyChamps {
@@ -144,6 +147,11 @@ body {
 @media only screen and (max-width: 1798px) {
   .polyChamps {
     font-size: 100px;
+  }
+}
+@media only screen and (max-width:1650px) {
+  .B {
+    grid-template-columns: 300px 75% ;
   }
 }
 @media only screen and (max-width: 1516px) {
@@ -157,6 +165,9 @@ body {
     float: right;
     margin-right: 10%;
   }
+  .B {
+    grid-template-columns: 300px 70% ;
+  }
 }
 @media only screen and (max-width: 1060px) {
   .polyChamps {
@@ -166,6 +177,10 @@ body {
     float: left;
     left: calc(50% - 320px/2);
     position: absolute;
+  }
+  .B {
+    grid-template-columns: 300px 65% ;
+  }
  }
  @media only screen and (max-width: 1040px) {
    .ref {
@@ -175,8 +190,7 @@ body {
      grid-template-columns: 1fr;
      justify-items:center;
      text-align: center;
-
-
+     padding: 35px;
    }
    .B div:nth-child(odd){
      padding-bottom: 20px;
